@@ -34,6 +34,7 @@ import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.util.Log;
 
+import com.example.sicbogameexample.GameEntity.GameAction;
 import com.example.sicbogameexample.SceneManager.SceneType;
 
 public class GameScene extends MyScene {
@@ -90,9 +91,10 @@ public class GameScene extends MyScene {
 				getActivity(), getEngine(), ItemType.TEXT, 1, Color.WHITE,
 				mChangableFont));
 		/*
-		textList.add(new TextComponent(2, 170, 20, "Max bet's 100 Zenny", -60,
-				395, getEngine().getTextureManager(), getActivity(),
-				getEngine(), ItemType.TEXT, 0.5f, Color.WHITE, mChangableFont));*/
+		 * textList.add(new TextComponent(2, 170, 20, "Max bet's 100 Zenny",
+		 * -60, 395, getEngine().getTextureManager(), getActivity(),
+		 * getEngine(), ItemType.TEXT, 0.5f, Color.WHITE, mChangableFont));
+		 */
 		textList.add(new TextComponent(3, 100, 23, GameEntity.betAmountRemain
 				+ "", 612, 380, getEngine().getTextureManager(), getActivity(),
 				getEngine(), ItemType.TEXT, 1, Color.WHITE, mChangableFont));
@@ -327,10 +329,10 @@ public class GameScene extends MyScene {
 				getEngine(), ItemType.BUTTON_ROLL, getScene(),
 				SceneType.ANIMATION));
 		/*
-		buttonList.add(new ButtonComponent(59, 139, 30, 2, 1, "btnexit.png",
-				725, 445, getEngine().getTextureManager(), getActivity(),
-				getEngine(), ItemType.BUTTON_EXIT, getScene(),
-				SceneType.ANIMATION));*/
+		 * buttonList.add(new ButtonComponent(59, 139, 30, 2, 1, "btnexit.png",
+		 * 725, 445, getEngine().getTextureManager(), getActivity(),
+		 * getEngine(), ItemType.BUTTON_EXIT, getScene(), SceneType.ANIMATION));
+		 */
 		buttonList.add(new ButtonComponent(59, 129, 46, 1, 1, "resetbtn.png",
 				277, 434, getEngine().getTextureManager(), getActivity(),
 				getEngine(), ItemType.BUTTON_CLEAR, getScene(),
@@ -349,7 +351,7 @@ public class GameScene extends MyScene {
 				750, 3, getEngine().getTextureManager(), getActivity(),
 				getEngine(), ItemType.BUTTON_SOUND, getScene(),
 				SceneType.ANIMATION));
-		
+
 	}
 
 	@Override
@@ -438,13 +440,18 @@ public class GameScene extends MyScene {
 
 	@Override
 	public void enableAllTouch() {
+
 		for (int i = 0; i < patternList.size(); i++) {
 			getScene().registerTouchArea(patternList.get(i).getSprite());
-			for (int j = 0; j < patternList.get(i).coinList.size(); j++) {
-				getScene().registerTouchArea(
-						patternList.get(i).coinList.get(j).getSprite());
+			if (GameEntity.gameAction != GameAction.RESET) {
+				for (int j = 0; j < patternList.get(i).coinList.size(); j++) {
+					getScene().registerTouchArea(
+							patternList.get(i).coinList.get(j).getSprite());
+				}
 			}
+
 		}
+
 		for (int i = 0; i < dragList.size(); i++) {
 			getScene().registerTouchArea(dragList.get(i).getSprite());
 		}

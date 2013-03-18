@@ -58,7 +58,6 @@ public class PatternComponent extends AbItemComponent {
 				return true;
 			}
 		});
-
 		atlastBig.load();
 	}
 	

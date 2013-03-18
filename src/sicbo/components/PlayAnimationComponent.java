@@ -73,114 +73,7 @@ public class PlayAnimationComponent implements IAnimationListener {
 
 		// Load animation component
 		animatedItemList = new ArrayList<AnimationComponent>();
-		/*
-		// left dice - 200 - 130
-		animatedItemList.add(new AnimationComponent(1, 3960, 146, 64, 64, 22,
-				1, "left-dice-1.png", -500, -500, scene.getEngine()
-						.getTextureManager(), scene.getActivity(), scene
-						.getEngine(), ItemType.DICE_LEFT, scene.getScene(),
-				null));
-		animatedItemList.add(new AnimationComponent(2, 3960, 146, 64, 64, 22,
-				1, "left-dice-2.png", -500, -500, scene.getEngine()
-						.getTextureManager(), scene.getActivity(), scene
-						.getEngine(), ItemType.DICE_LEFT, scene.getScene(),
-				null));
-		animatedItemList.add(new AnimationComponent(3, 3960, 146, 64, 64, 22,
-				1, "left-dice-3.png", -500, -500, scene.getEngine()
-						.getTextureManager(), scene.getActivity(), scene
-						.getEngine(), ItemType.DICE_LEFT, scene.getScene(),
-				null));
-		animatedItemList.add(new AnimationComponent(4, 3960, 146, 64, 64, 22,
-				1, "left-dice-4.png", -500, -500, scene.getEngine()
-						.getTextureManager(), scene.getActivity(), scene
-						.getEngine(), ItemType.DICE_LEFT, scene.getScene(),
-				null));
-		animatedItemList.add(new AnimationComponent(5, 3960, 146, 64, 64, 22,
-				1, "left-dice-5.png", -500, -500, scene.getEngine()
-						.getTextureManager(), scene.getActivity(), scene
-						.getEngine(), ItemType.DICE_LEFT, scene.getScene(),
-				null));
-		animatedItemList.add(new AnimationComponent(6, 3960, 146, 64, 64, 22,
-				1, "left-dice-6.png", -500, -500, scene.getEngine()
-						.getTextureManager(), scene.getActivity(), scene
-						.getEngine(), ItemType.DICE_LEFT, scene.getScene(),
-				null));
 
-		// Middle dice - 300 - 200
-		animatedItemList.add(new AnimationComponent(1, 3968, 43, 64, 64, 64, 1,
-				"middle-dice-1.png", -500, -500, scene.getEngine()
-						.getTextureManager(), scene.getActivity(), scene
-						.getEngine(), ItemType.DICE_MIDDLE, scene.getScene(),
-				displayTextList));
-
-		animatedItemList.add(new AnimationComponent(2, 3968, 43, 64, 64, 64, 1,
-				"middle-dice-2.png", -500, -500, scene.getEngine()
-						.getTextureManager(), scene.getActivity(), scene
-						.getEngine(), ItemType.DICE_MIDDLE, scene.getScene(),
-				displayTextList));
-
-		animatedItemList.add(new AnimationComponent(3, 3968, 43, 64, 64, 64, 1,
-				"middle-dice-3.png", -500, -500, scene.getEngine()
-						.getTextureManager(), scene.getActivity(), scene
-						.getEngine(), ItemType.DICE_MIDDLE, scene.getScene(),
-				displayTextList));
-
-		animatedItemList.add(new AnimationComponent(4, 3968, 43, 64, 64, 64, 1,
-				"middle-dice-4.png", -500, -500, scene.getEngine()
-						.getTextureManager(), scene.getActivity(), scene
-						.getEngine(), ItemType.DICE_MIDDLE, scene.getScene(),
-				displayTextList));
-
-		animatedItemList.add(new AnimationComponent(5, 3968, 43, 64, 64, 64, 1,
-				"middle-dice-5.png", -500, -500, scene.getEngine()
-						.getTextureManager(), scene.getActivity(), scene
-						.getEngine(), ItemType.DICE_MIDDLE, scene.getScene(),
-				displayTextList));
-
-		animatedItemList.add(new AnimationComponent(6, 3968, 43, 64, 64, 64, 1,
-				"middle-dice-6.png", -500, -500, scene.getEngine()
-						.getTextureManager(), scene.getActivity(), scene
-						.getEngine(), ItemType.DICE_MIDDLE, scene.getScene(),
-				displayTextList));
-
-		// Right dice - 320 - 170
-		animatedItemList.add(new AnimationComponent(1, 3960, 168, 64, 64, 22,
-				1, "right-dice-1.png", -500, -500, scene.getEngine()
-						.getTextureManager(), scene.getActivity(), scene
-						.getEngine(), ItemType.DICE_RIGHT, scene.getScene(),
-				null));
-
-		animatedItemList.add(new AnimationComponent(2, 3960, 168, 64, 64, 22,
-				1, "right-dice-2.png", -500, -500, scene.getEngine()
-						.getTextureManager(), scene.getActivity(), scene
-						.getEngine(), ItemType.DICE_RIGHT, scene.getScene(),
-				null));
-
-		animatedItemList.add(new AnimationComponent(3, 3960, 168, 64, 64, 22,
-				1, "right-dice-3.png", -500, -500, scene.getEngine()
-						.getTextureManager(), scene.getActivity(), scene
-						.getEngine(), ItemType.DICE_RIGHT, scene.getScene(),
-				null));
-
-		animatedItemList.add(new AnimationComponent(4, 3960, 168, 64, 64, 22,
-				1, "right-dice-4.png", -500, -500, scene.getEngine()
-						.getTextureManager(), scene.getActivity(), scene
-						.getEngine(), ItemType.DICE_RIGHT, scene.getScene(),
-				null));
-
-		animatedItemList.add(new AnimationComponent(5, 3960, 168, 64, 64, 22,
-				1, "right-dice-5.png", -500, -500, scene.getEngine()
-						.getTextureManager(), scene.getActivity(), scene
-						.getEngine(), ItemType.DICE_RIGHT, scene.getScene(),
-				null));
-
-		animatedItemList.add(new AnimationComponent(6, 3960, 168, 64, 64, 22,
-				1, "right-dice-6.png", -500, -500, scene.getEngine()
-						.getTextureManager(), scene.getActivity(), scene
-						.getEngine(), ItemType.DICE_RIGHT, scene.getScene(),
-				null));
-				*/
-		
 		//Load dice
 		//Left dice
 		animatedItemList.add(new AnimationComponent(1, 84, 426, 64, 64, 1,
@@ -285,7 +178,7 @@ public class PlayAnimationComponent implements IAnimationListener {
 						.getEngine(), ItemType.WIN_ANIMATION, scene.getScene(),
 				null));
 		animatedItemList.add(new AnimationComponent(2, 238, 237, 64, 64, 3, 3,
-				"ef_red_boom_1.png", -500, -500, scene.getEngine()
+				"ef_blue_boom_1.png", -500, -500, scene.getEngine()
 						.getTextureManager(), scene.getActivity(), scene
 						.getEngine(), ItemType.WIN_ANIMATION, scene.getScene(),
 				null));
@@ -295,7 +188,7 @@ public class PlayAnimationComponent implements IAnimationListener {
 						.getEngine(), ItemType.WIN_ANIMATION, scene.getScene(),
 				null));
 		animatedItemList.add(new AnimationComponent(4, 238, 237, 64, 64, 3, 3,
-				"ef_red_boom_1.png", -500, -500, scene.getEngine()
+				"ef_blue_boom_1.png", -500, -500, scene.getEngine()
 						.getTextureManager(), scene.getActivity(), scene
 						.getEngine(), ItemType.WIN_ANIMATION, scene.getScene(),
 				null));
@@ -303,14 +196,6 @@ public class PlayAnimationComponent implements IAnimationListener {
 
 	public void loadAniamtionScene() {
 		for (int i = 0; i < animatedItemList.size(); i++) {
-			/*
-			if (animatedItemList.get(i).getiItemType() == ItemType.DICE_LEFT)
-				animatedItemList.get(i).animatedSprite.setScale(2f);
-			if (animatedItemList.get(i).getiItemType() == ItemType.DICE_MIDDLE)
-				animatedItemList.get(i).animatedSprite.setScale(6f);
-			if (animatedItemList.get(i).getiItemType() == ItemType.DICE_RIGHT)
-				animatedItemList.get(i).animatedSprite.setScale(2f);
-				*/
 			background.getSprite().attachChild(
 					animatedItemList.get(i).animatedSprite);
 		}
@@ -345,6 +230,11 @@ public class PlayAnimationComponent implements IAnimationListener {
 		background.getSprite().setPosition(0, 0);
 		background.getSprite().setZIndex(999);
 		background.getSprite().getParent().sortChildren();
+		
+		//Display win pattern.
+		for (int i = 0; i < scene.patternList.size(); i++) {
+			
+		}
 	}
 
 	public void stopAnimation() {

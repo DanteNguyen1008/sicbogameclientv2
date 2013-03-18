@@ -82,6 +82,7 @@ public class CoinComponent extends AbItemComponent {
 		// coin.recyclePoolItem(getSprite());
 		coin.onHandleRecycleItem(getSprite());
 		//pattern.sortCoinList(this);
+		//pattern.coinList.remove(this);
 	}
 
 	public void reBuildCoin() {

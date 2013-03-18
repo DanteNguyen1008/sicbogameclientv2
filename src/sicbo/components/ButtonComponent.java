@@ -282,16 +282,19 @@ public class ButtonComponent extends AbItemComponent {
 
 	private void updateAfterBet() {
 		// clearAllBet();
+
 		for (int j = 0; j < GameEntity.sceneManager.gameScene.patternList
 				.size(); j++) {
 			for (int i = 0; i < GameEntity.sceneManager.gameScene.patternList
 					.get(j).coinList.size(); i++) {
+
 				GameEntity.sceneManager.gameScene.patternList.get(j).coinList
 						.get(i).removeCoin();
 				GameEntity.sceneManager.gameScene.getScene()
 						.unregisterTouchArea(
 								GameEntity.sceneManager.gameScene.patternList
 										.get(j).coinList.get(i).getSprite());
+
 			}
 		}
 
@@ -306,6 +309,7 @@ public class ButtonComponent extends AbItemComponent {
 						.updateBetRemain(GameEntity.REMAIN_FIXED);
 			}
 		}
+
 		GameEntity.sceneManager.gameScene.betList.clear();
 		GameEntity.gameAction = GameEntity.GameAction.RESET;
 	}

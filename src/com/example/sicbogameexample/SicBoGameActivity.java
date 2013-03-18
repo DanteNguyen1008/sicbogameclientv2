@@ -34,7 +34,7 @@ public class SicBoGameActivity extends BaseGameActivity {
 		EngineOptions engineOptions = new EngineOptions(true,
 				ScreenOrientation.LANDSCAPE_FIXED, new FillResolutionPolicy(),
 				camera);
-		engineOptions.getTouchOptions().setNeedsMultiTouch(true);
+		//engineOptions.getTouchOptions().setNeedsMultiTouch(true);
 
 		return engineOptions;
 	}
